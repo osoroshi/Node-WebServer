@@ -22,7 +22,6 @@ app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
     welcomeMessage: 'Welcome to my website',
-    ProjectMessage: 'Projects List',
     currentYear: new Date().getFullYear()
   });
 });
@@ -37,6 +36,7 @@ app.get('/about', (req, res) => {
 app.get('/Projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Projects Page',
+    ProjectMessage: 'Projects List',
     currentYear: new Date().getFullYear()
   });
 });
